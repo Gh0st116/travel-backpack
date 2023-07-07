@@ -6,7 +6,7 @@ itens.forEach( (elemento) => {
     criaElemento(elemento)
 } )
 
-form.addEventListener("submit", (evento) => {
+form.addEventListener('submit', (evento) => {
     evento.preventDefault()
 
     const nome = evento.target.elements['nome']
@@ -38,7 +38,7 @@ form.addEventListener("submit", (evento) => {
 
     nome.value = ""
     quantidade.value = ""
-})
+});
 
 function criaElemento(item) {
     const novoItem = document.createElement("li")
